@@ -12,9 +12,9 @@
 #     --load ./exps/ViDSOD_0323_140914/latest.pt \
 #     --task ViDSOD-100 --num_frame_queries=30 --num_video_queries=8 --enable_memory
 
-uv run torchrun ./test.py \
-    --data_prefix /home/linj/workspace/vsod/datasets \
-    --sam2_config ./models/sam2/configs/sam2.1/sam2.1_hiera_l.yaml \
-    --sam2_ckpt ./weights/sam2.1_hiera_large.pt \
+CUDA_VISIBLE_DEVICES=0 uv run torchrun ./test.py \
+    --data_prefix /project/def-vislearn/datasets/ \
+    --sam2_config ./configs/sam2.1/sam2.1_hiera_l.yaml \
+    --sam2_ckpt ./models/sam2/sam2.1_hiera_large.pt \
     --load ./weights/dvisal.pt \
     --task DViSal --num_frame_queries=30 --num_video_queries=8 --enable_memory
