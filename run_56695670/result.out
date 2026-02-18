@@ -1,0 +1,2 @@
+Namespace(data_prefix='/project/def-vislearn/datasets/', task='DViSal', sam2_config='./configs/sam2.1/sam2.1_hiera_l.yaml', sam2_ckpt='./models/sam2/sam2.1_hiera_large.pt', load_path='./weights/dvisal.pt', local_rank=0, num_frame_queries=30, num_video_queries=8, enable_memory=True)
+134 videos accepted in /project/def-vislearn/datasets/DViSal_dataset/data.
