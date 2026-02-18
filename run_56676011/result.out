@@ -1,0 +1,1 @@
+Namespace(data_prefix='/home/linj/workspace/vsod/datasets', task='DViSal', sam2_config='./models/sam2/sam2_hiera_l.yaml', sam2_ckpt='./weights/sam2.1_hiera_large.pt', load_path='./weights/dvisal.pt', local_rank=0, num_frame_queries=30, num_video_queries=8, enable_memory=True)
