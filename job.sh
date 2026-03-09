@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --time=00:50:00          # Time limit (HH:MM:SS) 
+#SBATCH --time=48:00:00          # Time limit (HH:MM:SS) 
 #SBATCH --output=run_%j/result.out   # Output file name 
 #SBATCH --error=run_%j/log.err
-#SBATCH --job-name=caua_dvsod-test   # Name of the job
+#SBATCH --job-name=dvsod-train   # Name of the job
 
 #SBATCH --account=def-vislearn
 
@@ -28,4 +28,4 @@ module load opencv/4.13.0
 #conda activate torch222
 
 # 3. Run your python script
-./scripts/test.sh
+./scripts/train.sh
